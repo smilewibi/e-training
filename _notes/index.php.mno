@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_Recordset1" value="name:no;datatype:int,name:foto;datatype:string,name:Judul;datatype:string,name:isi;datatype:blob,name:Detail;datatype:blob" />
-	<infoitem key="UD_colom2" value="name:foto;datatype:blob,name:Judul;datatype:string,name:isi;datatype:blob" />
-	<infoitem key="UD_colom3" value="name:foto;datatype:blob,name:Judul;datatype:string,name:Isi;datatype:blob" />
-	<infoitem key="UD_kolom1" value="name:foto;datatype:blob,name:Judul;datatype:string,name:Isi;datatype:blob,name:Detail;datatype:blob" />
-	<infoitem key="UD_kolom2" value="name:foto;datatype:string,name:Judul;datatype:string,name:isi;datatype:blob,name:Detail;datatype:blob" />
-	<infoitem key="UD_kolom3" value="name:foto;datatype:blob,name:Judul;datatype:string,name:Isi;datatype:blob,name:Detail;datatype:blob" />
-</info>

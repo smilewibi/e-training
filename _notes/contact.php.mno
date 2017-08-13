@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_Recordset1" value="name:Nama;datatype:string,name:email;datatype:string,name:tanggal;datatype:string,name:time;datatype:string,name:komentar;datatype:string" />
-	<infoitem key="UD_Recordset2" value="name:Judul;datatype:string,name:Tanggal;datatype:string,name:Sinopsis;datatype:string,name:Foto;datatype:blob" />
-	<infoitem key="UD_kolom2" value="name:Nama;datatype:string,name:email;datatype:string,name:tanggal;datatype:string,name:time;datatype:string,name:komentar;datatype:string" />
-</info>

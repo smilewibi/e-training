@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_Recordset1" value="name:Id_guru;datatype:int,name:Nma_dpn;datatype:string,name:Nma_blkng;datatype:string,name:Tgl_lhr;datatype:string,name:Tmpt_lhr;datatype:string,name:Jengkel;datatype:string,name:Email;datatype:string,name:No_hp;datatype:string,name:Alamat;datatype:blob,name:Kompetensi_inti;datatype:string,name:Kompetensi_dsr;datatype:string,name:Judul_materi;datatype:string,name:Foto;datatype:string" />
-	<infoitem key="UD_Recordset2" value="name:Id_materi;datatype:int,name:Id_guru;datatype:string,name:Judul_Materi;datatype:string,name:Tgl;datatype:string,name:Video;datatype:blob,name:Id_guru;datatype:int,name:Nma_dpn;datatype:string,name:Nma_blkng;datatype:string,name:Foto;datatype:string" />
-	<infoitem key="UD_Recordset3" value="name:Id_tgs;datatype:int,name:Id_materi;datatype:string,name:Id_siswa;datatype:string,name:Id_guru;datatype:string,name:Date;datatype:string,name:Judul;datatype:blob,name:File;datatype:blob,name:Id_materi;datatype:int,name:Judul_Materi;datatype:string,name:Tgl;datatype:string,name:id_siswa;datatype:int,name:Nama_dpn;datatype:string,name:Nm_blkng;datatype:string,name:Foto;datatype:string,name:Id_guru;datatype:int,name:Nma_dpn;datatype:string,name:Nma_blkng;datatype:string,name:Email;datatype:string" />
-</info>
