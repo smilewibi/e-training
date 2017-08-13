@@ -1,0 +1,1004 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+	position: relative;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+body {
+	background-color: #CCC;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style:oblique;
+	font-size:12px;
+}
+h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: oblique;
+	font-size:14px;
+	padding-bottom: 5px;
+	text-align: left;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	color: #666;
+}
+a {
+	line-height: 1em;
+	text-decoration: none;
+}
+a:hover {
+	outline: 0;
+}
+.merk {
+	text-align: center;
+	font-size: 24px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: oblique;
+	text-decoration: none;
+	color: #FFF;
+	visibility:!important;
+}
+#sidebar {
+	clear: both;
+	text-align: center;
+	float: left;
+	margin-left: 0;
+	text-align: center;
+	width: 100%;
+	height:auto;
+	display: none;
+	vertical-align: middle;
+}
+#main {
+	clear: both;
+	float: left;
+	width: 100%;
+	display: block;
+	background: #FFF;
+	height: auto;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#footer {
+	clear: right;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background: #000;
+	height: auto;
+	padding-bottom: 5px;
+}
+#kolom2 {
+	clear: none;
+	float: left;
+	width: 90%;
+	display: block;
+	border: 0px none #FFF;
+	padding-top: 25px;
+	padding-right: 5px;
+	padding-bottom: 25px;
+	padding-left: 10px;
+	margin: 5px;
+	position: relative;
+	visibility: visible;
+}
+#logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 22%;
+	display: block;
+	height: 50px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+#judul {
+	clear: none;
+	float: left;
+	font-size:14px;
+	width: 75%;
+	display: block;
+	height: auto;
+	margin-left: 2.0408%;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+#judul1 {
+	clear: none;
+	float: left;
+	font-size:14px;
+	width: 98%;
+	display: block;
+	height: auto;
+	margin-left: 2.0408%;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+}
+#readmore {
+	clear: both;
+	text-align:right;
+	float: right;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Isi {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+#try {
+	clear: both;
+	text-align:center;
+	float: left;
+	margin-left: 0;
+	width: 80%;
+	display: block;
+	padding-left: 20px;
+	color: #FFF;
+}
+#fb {
+	clear: none;
+	text-align:center;
+	float: left;
+	margin-left: 2.0408%;
+	width: 80%;;
+	display: block;
+	color: #FFF;
+}
+#tweet {
+	clear: none;
+	text-align:center;
+	float: left;
+	margin-left: 2.0408%;
+	width:80%;
+	display: block;
+}
+#copyright {
+	clear: both;
+	float: left;
+	width: 100%;
+	display: block;
+	color: #000;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #000;
+	border-bottom-color: #000;
+	padding-top: 5px;
+}
+/*...........................*/
+#primary {
+	clear: both;
+	float: left;
+	width: 90%;
+	display: inherit;
+	margin: 10px;
+	padding: 5px;
+}
+#secondary {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 27%;
+	display: none;
+}
+#News {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+#picture {
+	clear: both;
+	float: right;
+	width: 100px;
+	display: block;
+	border: 1px solid #000;
+	height: 100px;
+	margin: 1%;
+	padding: 2px;
+	position: relative;
+	margin: -100px 0 0 0;
+	background-color: #FFF;
+}
+#panel1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#panel2 {
+	clear: both;
+	background:#EFEFEF;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#panel3 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 58%;
+	display: block;
+}
+#event {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#date {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+/*...........................*/
+#Map {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	border: thin solid #999;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+}
+
+#Guest {
+	clear: both;
+	float: left;
+	width: 100%;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #EFEFEF;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+}
+
+#avatar {
+	clear: none;
+	text-align: right;
+	float: right;
+	margin-left: 2.0408%;
+	width: 10%;
+	display: block;
+	margin-right: 2.04%;
+	height: auto;
+}
+/*..........................*/
+embed {
+	text-align:center;
+	width: 95%;
+}
+#login {
+	clear: none;
+	float: left;
+	width: 30%;
+	display: block;
+	border: 0px none #FFF;
+	padding-top: 25px;
+	padding-right: 90%;
+	padding-bottom: 25px;
+	padding-left: 10%;
+	margin: 5px;
+	position: relative;
+	visibility: visible;
+}
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+body {
+	background-color: #CCC;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style:oblique;
+	font-size:14px;
+}
+h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: oblique;
+	font-size:14px;
+	padding-bottom: 5px;
+	text-align: left;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	color: #666;
+}
+a {
+	line-height: 1em;
+	text-decoration: none;
+}
+a:hover {
+	outline: 0;
+}
+.merk {
+	text-align: center;
+	font-size: 24px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: oblique;
+	text-decoration: none;
+	color: #FFF;
+	visibility:!important;
+}
+#sidebar {
+	clear: both;
+	text-align: center;
+	float: left;
+	margin-left: 0;
+	text-align: center;
+	width: 100%;
+	height:auto;
+	display: block;
+	vertical-align: middle;
+}
+#main {
+	clear: both;
+	float: left;
+	width: 100%;
+	display: block;
+	background: #FFF;
+	height: auto;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#footer {
+	clear: right;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background: #000;
+	height: auto;
+	padding-bottom: 5px;
+}
+#kolom2 {
+	clear: none;
+	float: left;
+	width: 45%;
+	display: block;
+	border: 0px none #FFF;
+	padding-top: 25px;
+	padding-right: 5px;
+	padding-bottom: 25px;
+	padding-left: 10px;
+	margin: 5px;
+	position: relative;
+	visibility: visible;
+}
+#logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 18%;
+	display: block;
+	height: 50px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+#judul {
+	clear: none;
+	float: left;
+	width: 75%;
+	display: block;
+	height: auto;
+	margin-left: 2.0408%;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+#judul1 {
+	clear: none;
+	font-size:11px;
+	float: left;
+	width: 98%;
+	display: block;
+	margin-left: 2.0408%;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+}
+#readmore {
+	clear: both;
+	text-align:right;
+	float: right;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Isi {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+#try {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 45%;
+	display: block;
+	padding-left: 20px;
+	color: #FFF;
+}
+#fb {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 45%;;
+	display: block;
+	color: #FFF;
+}
+#tweet {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 45%;
+	display: block;
+}
+#copyright {
+	clear: both;
+	float: left;
+	width: 100%;
+	display: block;
+	color: #000;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #000;
+	border-bottom-color: #000;
+	padding-top: 5px;
+}
+/*...........................*/
+#primary {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 94%;
+	display: inline-table;
+	margin: 10px 10px 10px 10px;
+	padding: 5px 5px 5px 5px;
+}
+#secondary {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 27%;
+	display: block;
+	visibility: hidden;
+}
+#News {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+#picture {
+	clear: both;
+	float: right;
+	width: 120px;
+	display: block;
+	border: 1px solid #000;
+	height: 120px;
+	margin: 1%;
+	padding: 2px;
+	position: relative;
+	margin: -100px 0 0 0;
+	background-color: #FFF;
+}
+#panel1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 1%;
+	display:none;
+}
+#panel3 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 58%;
+	display: block;
+}
+#panel2 {
+	clear: both;
+	background:#EFEFEF;
+	float: left;
+	margin-left: 0;
+	width: 1%;
+	display:none;
+}
+#event {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 1%;
+	display:none;
+}
+#date {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+/*...........................*/
+#Map {
+	clear: both;
+	text-align:center;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	border: thin solid #999;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+}
+
+#Guest {
+	clear: both;
+	float: left;
+	width: 100%;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #EFEFEF;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+}
+
+#avatar {
+	clear: none;
+	text-align: right;
+	float: right;
+	margin-left: 2.0408%;
+	width: 10%;
+	display: block;
+	margin-right: 2.04%;
+	height: auto;
+}
+/*..........................*/
+embed {
+	text-align:center;
+	width: 95%;
+}
+/*..........................*/
+#login {
+	clear: none;
+	float: left;
+	width: 30%;
+	display: block;
+	border: 0px none #FFF;
+	padding-top: 25px;
+	padding-right: 75%;
+	padding-bottom: 25px;
+	padding-left: 25%;
+	margin: 5px;
+	position: relative;
+	visibility: visible;
+}
+}
+
+/* Desktop Layout: 980px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 980px) {
+
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+body {
+	background-color: #CCC;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style:oblique;
+	font-size:14px;
+}
+h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: oblique;
+	padding-bottom: 5px;
+	text-align: left;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	color: #666;
+}
+a {
+	line-height: 1em;
+	text-decoration: none;
+}
+a:hover {
+	outline: 0;
+}
+.merk {
+	text-align: center;
+	font-size: 24px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: oblique;
+	text-decoration: none;
+	color: #FFF;
+	visibility: hidden;
+}
+#sidebar {
+	clear: both;
+	text-align: center;
+	float: left;
+	margin-left: 0;
+	text-align: center;
+	width: 100%;
+	height:auto;
+	display: block;
+	vertical-align: middle;
+}
+#main {
+	clear: both;
+	float: left;
+	width: 100%;
+	display: block;
+	background: #FFF;
+	height: auto;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#footer {
+	clear: right;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background: #000;
+	height: auto;
+	padding-bottom: 5px;
+}
+#kolom2 {
+	clear: none;
+	float: left;
+	width: 22%;
+	display: block;
+	border: 0px none #FFF;
+	padding-top: 25px;
+	padding-right: 5px;
+	padding-bottom: 25px;
+	padding-left: 10px;
+	margin: 5px;
+	position: relative;
+	visibility: visible;
+}
+#logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 18%;
+	display: block;
+	height: 50px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+#judul {
+	clear: none;
+	float: left;
+	width: 75%;
+	display: block;
+	height: auto;
+	margin-left: 2.0408%;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+#judul1 {
+	clear: none;
+	float: left;
+	width: 98%;
+	display: block;
+	height: auto;
+	margin-left: 2.0408%;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+}
+#readmore {
+	clear: both;
+	text-align:right;
+	float: right;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Isi {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+#try {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 20%;
+	display: block;
+	padding-left: 20px;
+	color: #FFF;
+}
+#fb {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 20%;;
+	display: block;
+	color: #FFF;
+}
+#tweet {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 20%;
+	display: block;
+}
+#copyright {
+	clear: both;
+	float: left;
+	width: 100%;
+	display: block;
+	color: #000;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #000;
+	border-bottom-color: #000;
+	padding-top: 5px;
+}
+/*...........................*/
+#primary {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 65%;
+	display: block;
+	margin: 10px 10px 10px 10px;
+	padding: 5px 5px 5px 5px;
+}
+#secondary {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 27%;
+	display: block;
+	visibility: inherit;
+}
+#News {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+#picture {
+	clear: both;
+	float: right;
+	width: 200px;
+	display: block;
+	border: 1px solid #000;
+	height: 200px;
+	margin: 1%;
+	padding: 2px;
+	position: relative;
+	margin: -100px 0 0 0;
+	background-color: #FFF;
+}
+#panel1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#panel2 {
+	clear: both;
+	background:#EFEFEF;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#panel3 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 90%;
+	display: block;
+}
+#event {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#date {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+/*...........................*/
+#Map {
+	clear: both;
+	float: left;
+	text-align:center;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	border: thin solid #999;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+}
+
+#Guest {
+	clear: both;
+	float: left;
+	width: 100%;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #EFEFEF;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+}
+
+#avatar {
+	clear: none;
+	text-align: right;
+	float: right;
+	margin-left: 2.0408%;
+	width: 10%;
+	display: block;
+	margin-right: 2.04%;
+	height: auto;
+}
+/*..........................*/
+embed {
+	text-align:center;
+	width: 95%;
+}
+/*..........................*/
+#login {
+	clear: none;
+	float: left;
+	width: 30%;
+	display: block;
+	border: 0px none #FFF;
+	padding-top: 25px;
+	padding-right: 30%;
+	padding-bottom: 25px;
+	padding-left: 30%;
+	margin: 5px;
+	position: relative;
+	visibility: visible;
+}
+}

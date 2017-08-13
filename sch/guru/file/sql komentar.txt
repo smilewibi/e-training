@@ -1,0 +1,1 @@
+SELECT komentar.id_komentar,komentar.id_guru,komentar.id_siswa,komentar.id_materi,komentar.Tgl,komentar.Waktu,komentar.isi,guru.Id_guru,guru.Nma_dpn,guru.Nma_blkng,siswa.id_siswa,siswa.Nama_dpn,siswa.Nm_blkng FROM komentar,siswa,guru WHERE komentar.id_materi="3120" AND komentar.id_siswa=siswa.id_siswa OR komentar.id_guru=guru.Id_guru ORDER BY komentar.id_komentar DESC 
